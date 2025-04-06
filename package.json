@@ -10,10 +10,10 @@
     "lint:fix": "solhint 'contracts/**/*.sol' --fix",
     "format": "prettier --write .",
     "coverage": "hardhat coverage --solcoverjs ./.solcover.js",
-    "fuzzing": "docker run -it --rm -v $PWD:/src trailofbits/eth-security-toolbox"
+    "fuzzing": "docker run -it --rm -v $PWD:/src trailofbits/eth-security-toolbox",
+    "deploy": "hardhat run scripts/deploy.js --network calibrationnet"
   },
   "license": "MIT",
-  "devDependencies": {},
   "dependencies": {
     "@glif/filecoin-address": "^2.0.43",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
